@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Invoice Generator for Freelancers — send a clean invoice in 60 seconds</title>
+<meta name="description" content="A one-file invoice generator for freelancers. No account, no subscription. Works offline. Save as PDF and send.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧾</text></svg>">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap">
+<style>
+:root{--navy:#14213d;--blue:#e6eef8;--gold:#fca311;--white:#fff;--mute:#4a5b78}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Bricolage Grotesque',system-ui,sans-serif;color:var(--navy);background:var(--white);line-height:1.55;font-size:17px}
+a{color:inherit}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+header{background:var(--navy);color:var(--white)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:72px 0 80px}
+h1{font-size:clamp(36px,6vw,62px);line-height:1.03;margin:0 0 18px;font-weight:800;letter-spacing:-.02em}
+.sub{font-size:19px;color:#c7d3e8;max-width:46ch;margin:0 0 28px}
+.btn{display:inline-block;background:var(--gold);color:var(--navy);font-weight:800;text-decoration:none;padding:15px 26px;border-radius:8px;font-size:18px}
+.btn:hover{filter:brightness(1.07)}
+.btn:focus-visible{outline:3px solid var(--white);outline-offset:3px}
+.small{font-size:14px;color:#9fb0cc;margin-top:12px}
+.mock{background:var(--white);color:var(--navy);border-radius:10px;padding:22px;transform:rotate(1.6deg);box-shadow:0 24px 50px rgba(0,0,0,.35);font-size:13px}
+.mock .t{display:flex;justify-content:space-between;font-weight:800;font-size:16px;margin-bottom:14px}
+.mock .l{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid #d9e2ef}
+.mock .g{display:flex;justify-content:space-between;font-weight:800;font-size:20px;margin-top:14px;padding-top:10px;border-top:2px solid var(--navy)}
+.mock .tag{background:var(--gold);padding:2px 9px;border-radius:99px;font-size:12px;font-weight:800}
+section{padding:64px 0}
+h2{font-size:clamp(28px,4vw,40px);margin:0 0 28px;line-height:1.1;letter-spacing:-.01em}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.grid h3{margin:0 0 6px;font-size:19px}
+.grid p{margin:0;color:var(--mute)}
+.alt{background:var(--blue)}
+.price{display:flex;align-items:center;gap:36px;flex-wrap:wrap}
+.price b{font-size:72px;font-weight:800;line-height:1}
+ul{margin:0;padding-left:20px;color:var(--mute)}
+li{margin:6px 0}
+details{border-top:1px solid #c9d6ea;padding:14px 0}
+details:last-of-type{border-bottom:1px solid #c9d6ea}
+summary{cursor:pointer;font-weight:600}
+details p{margin:8px 0 0;color:var(--mute)}
+footer{background:var(--navy);color:#9fb0cc;padding:28px 0;font-size:14px}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding:48px 0}.grid{grid-template-columns:1fr}.mock{transform:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="w hero">
+    <div>
+      <h1>Invoice clients in 60 seconds. Pay nothing monthly.</h1>
+      <p class="sub">One file. No account, no subscription, no data leaving your computer. Fill it in, save as PDF, get paid.</p>
+      <a class="btn" href="YOUR_GUMROAD_LINK" id="buy">Get it for $12</a>
+      <p class="small">Instant download. 14-day refund if it doesn't work for you.</p>
+    </div>
+    <div class="mock" aria-hidden="true">
+      <div class="t"><span>Invoice INV-014</span><span class="tag">Due in 14 days</span></div>
+      <div class="l"><span>Logo design</span><span>$800.00</span></div>
+      <div class="l"><span>Brand guidelines</span><span>$450.00</span></div>
+      <div class="l"><span>Tax (10%)</span><span>$125.00</span></div>
+      <div class="g"><span>Total due</span><span>$1,375.00</span></div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="w">
+    <h2>Built for people who bill by the hour or the project</h2>
+    <div class="grid">
+      <div><h3>Totals do themselves</h3><p>Add lines, set a tax rate, and the subtotal and total update as you type.</p></div>
+      <div><h3>Looks professional</h3><p>Clean layout that prints to a crisp PDF from any browser. Add your name and payment details once; they stay.</p></div>
+      <div><h3>Private and offline</h3><p>Runs in your browser. Nothing is uploaded, nothing expires, and it keeps working without internet.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="w price">
+    <div><b>$12</b><div>one-time, yours forever</div></div>
+    <div>
+      <ul>
+        <li>The invoice generator (single HTML file)</li>
+        <li>Any currency, any tax rate</li>
+        <li>Auto-saves your details and next invoice number</li>
+        <li>Free updates</li>
+      </ul>
+      <p style="margin-top:20px"><a class="btn" href="YOUR_GUMROAD_LINK">Get it for $12</a></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="w">
+    <h2>Questions</h2>
+    <details><summary>Do I need to install anything?</summary><p>No. Open the file in Chrome, Safari, Edge or Firefox.</p></details>
+    <details><summary>How do I send an invoice?</summary><p>Click Save as PDF / Print, choose Save as PDF, and attach it to an email.</p></details>
+    <details><summary>Where is my data stored?</summary><p>Only in your own browser on your own device. We never see it.</p></details>
+    <details><summary>What if it isn't for me?</summary><p>Email within 14 days for a full refund.</p></details>
+  </div>
+</section>
+
+<footer><div class="w">Questions? your@email.com</div></footer>
+</body>
+</html>
